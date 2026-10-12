@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<>
+<h2>Student Management System</h2>
+<form>
+<input type="text" id="id" placeholder="Student ID">
+<input type="text" id="name" placeholder="Student Name">
+<input type="text" id="course" placeholder="Course">
+<input type="number" id="m1" placeholder="Mark 1">
+<input type="number" id="m2" placeholder="Mark 2">
+<br>
+<button type="button"onclick="addStu()">Add Student</button>
+<button type="button" onclick="delstu()">delete student</button>
+</form>
+<p id="result"></p>
+<script>
+function addStu() {
+    let b = document.getElementById("id").value;
+    let a = document.getElementById("name").value;
+    let c = document.getElementById("course").value;
+    let d = document.getElementById("m1").value;
+    let e = document.getElementById("m2").value;
+    document.getElementById("result").innerHTML =
+        "Student ID: " + b + "<br>" +
+        "Name: " + a + "<br>" +
+        "Course: " + c + "<br>" +
+        "Mark 1: " + d + "<br>" +
+        "Mark 2: " + e;
+}
+function delstu() {
+    document.getElementById("result").innerHTML = "";
+}
+</script>
+</body>
+</html>

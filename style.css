@@ -1,0 +1,19 @@
+body {
+background-color: lightblue;
+font-family: Arial;
+text-align: center;
+}
+form {
+background-color: white;
+padding: 20px;
+margin: 20px auto;
+width: 300px;
+}
+button {
+background-color: gray;
+color: white;
+padding: 8px;
+border: none;
+cursor: pointer;
+}
+  
